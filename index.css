@@ -1,0 +1,182 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* google font */
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    position: relative;
+
+}
+
+.hide {
+  display: none;
+}
+
+#hero {
+  max-width: 34.375em;
+  min-height: 13em;
+  background-image: url("./SMP-guns-banner.jpg");
+  background-size: cover;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .title {
+    color: #fff;
+    font-size: 2.67rem;
+    padding: 0;
+    text-shadow: .06em .06em .31em #000;
+  }
+
+  .watch-list {
+    margin: 0;
+    padding-top: .5em;
+    padding-right: .5em;
+    position: absolute;
+    color: #fff;
+    top: 0;
+    right: 0;
+    text-shadow: .06em .06em .31em #000;
+    cursor: pointer;
+  }
+
+
+  div {
+    display: flex;
+  }
+
+  input {
+    height: 2.37em;
+    width: 21.375em;
+    margin: 0;
+    color: #6B7280;
+    border: .06em solid #D1D5DB;
+    border-top-left-radius: .375em; 
+    border-bottom-left-radius: .375em;
+    padding-left: .5em;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  button {
+    width: 7.5em;
+    height: 2.375em;
+    color: #374151;
+    border: none;
+    background: #F9FAFB;
+    border-top-right-radius: .375em;
+    border-bottom-right-radius: .375em;
+    cursor: pointer;
+  }
+}
+
+#body {
+  max-width: 34.375em;
+  min-height: 35.68em;
+  padding-top: 3.93em;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: center;
+
+  #blank {
+    #weapon {
+      width: 6.25em;
+      margin: 0;
+      
+    }
+    p {
+      margin: 0;
+    }
+  }
+  
+  .weapon-card {
+    width: 28.81em;
+    border-bottom: 1px solid #E5E7EB;
+    margin-bottom: .5em;
+    img {
+      width: 100%;
+      padding: .5em;
+    }
+    span {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+      .title {
+        margin-left: .44em;
+        font-size: 1.125rem;
+      }
+
+      .caliber {
+        display: flex;
+        align-items: center;
+        font-size: .75rem;
+        margin-left: .5em;
+        padding-top: .1em;
+        svg {
+          margin-right: .3em;
+          width: .8em;
+        }
+      }
+      .frame {
+        display: flex;
+        align-items: center;
+        font-size: .75rem;
+        svg {
+          margin-right: .3em;
+          width: 2.4em;
+        }
+      }
+      #add-to-watchlist {
+        background: none;
+        border: none;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        #watch {
+          width: 2em;
+        }
+      }
+      #add-to-watchlist:hover {
+        text-decoration: underline;
+      }
+      
+      p {
+        margin: 0 .5em 0 0;
+      }
+    }
+    .msrp {
+      margin-left: .7em;
+      margin-top: 0;
+      font-size: .75rem;
+      display: flex;
+      color: #111827;
+      
+      }
+    .features {
+      li {
+        font-size: .875rem;
+        margin: 0 1em;
+        color: #6B7280;
+      }
+    }
+  }
+
+
+}
+
