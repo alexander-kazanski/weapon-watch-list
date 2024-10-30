@@ -6,6 +6,6 @@
 
 [[redirects]]
   from = "/watchlist.html"
-  to = "/watchlist"
+  to = "/watchlist.html"
   status = 301
   force = true
